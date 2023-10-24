@@ -6,3 +6,10 @@ export const getTodo = (id) => {
     .then(response => response.data)
     .catch(err => err);
 }
+
+export const getTodos = () => {
+    return axios
+        .get("https://jsonplaceholder.typicode.com/todos")
+        .then(response => response.data)
+        .catch(err => err);
+}
